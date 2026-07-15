@@ -1,0 +1,36 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Raw data (large and/or re-downloadable — do not commit).
+# Figures, metrics, predictions, and trained models ARE committed
+# intentionally so the results are visible on GitHub without cloning
+# and running the pipeline.
+data/raw/**/*.csv
+data/external/*.csv
+data/processed/*.csv
+
+# Keep folder structure via .gitkeep even though CSV contents are ignored
+!data/raw/**/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Environment variables / secrets
+.env
