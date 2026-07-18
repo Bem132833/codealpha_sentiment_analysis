@@ -26,6 +26,9 @@ data/processed/*.csv
 !data/processed/.gitkeep
 !data/external/.gitkeep
 
+# Generated logs
+outputs/logs/
+
 # OS / editor
 .DS_Store
 .vscode/

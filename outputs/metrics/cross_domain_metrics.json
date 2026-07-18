@@ -1,0 +1,14 @@
+{
+  "matrix": {
+    "amazon_reviews": {
+      "amazon_reviews": 0.1667
+    }
+  },
+  "combined_model_scores": {
+    "amazon_reviews": 0.1667
+  },
+  "domains_evaluated": [
+    "amazon_reviews"
+  ],
+  "note": "matrix[source][target] = macro-F1 when training on `source` and testing on `target`. Diagonal = in-domain baseline. combined_model_scores = macro-F1 when training on all domains pooled together, evaluated per domain."
+}
