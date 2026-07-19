@@ -1,14 +1,30 @@
 {
   "matrix": {
     "amazon_reviews": {
-      "amazon_reviews": 0.1667
+      "amazon_reviews": 0.521,
+      "twitter_airline": 0.2988,
+      "financial_phrasebank": 0.2428
+    },
+    "twitter_airline": {
+      "amazon_reviews": 0.3189,
+      "twitter_airline": 0.7071,
+      "financial_phrasebank": 0.2962
+    },
+    "financial_phrasebank": {
+      "amazon_reviews": 0.1314,
+      "twitter_airline": 0.2234,
+      "financial_phrasebank": 0.7078
     }
   },
   "combined_model_scores": {
-    "amazon_reviews": 0.1667
+    "amazon_reviews": 0.5113,
+    "twitter_airline": 0.6545,
+    "financial_phrasebank": 0.5889
   },
   "domains_evaluated": [
-    "amazon_reviews"
+    "amazon_reviews",
+    "twitter_airline",
+    "financial_phrasebank"
   ],
   "note": "matrix[source][target] = macro-F1 when training on `source` and testing on `target`. Diagonal = in-domain baseline. combined_model_scores = macro-F1 when training on all domains pooled together, evaluated per domain."
 }
